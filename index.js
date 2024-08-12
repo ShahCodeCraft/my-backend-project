@@ -5,7 +5,7 @@ const cors = require('cors'); // Import cors
 require('dotenv').config(); // Load environment variables from .env file
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || PORT;
 
 // Middleware to parse JSON bodies
 app.use(express.json());
